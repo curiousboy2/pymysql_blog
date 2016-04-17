@@ -1,0 +1,12 @@
+本程序是根据（https://github.com/pallets/flask/tree/master/examples/flaskr）项目改编来的，原项目使用的是sqlite3,而这里使用的是mysql5.7。
+实现了：微型博客的功能。
+
+
+需要使用包有：
+import pymysql
+from flask import Flask, request, session, g, redirect, url_for, abort, \
+     render_template, flash
+
+储存数据的表的创建语句是：
+use hello;
+create table entries(id int primary key auto_increment,title text not null,content text not null);
