@@ -6,6 +6,8 @@
 import pymysql
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash
+数据库模式文件：
+schema.sql
 
 储存数据的表的创建语句是：
 use hello;
