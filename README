@@ -1,5 +1,5 @@
-本程序是根据（https://github.com/pallets/flask/tree/master/examples/flaskr）项目改编来的
-，原项目使用的数据库是sqlite3,而本项目的数据库采用mysql5.7。
+本程序以（https://github.com/pallets/flask/tree/master/examples/flaskr）项目为基础，对原项目进行了较大的改进，如原项目使用的数据库
+是sqlite3,而本项目的数据库mysql。
 
 项目的功能：本项目实际上是一个微型博客系统，系统
 
@@ -11,6 +11,4 @@ from flask import Flask, request, session, g, redirect, url_for, abort, \
 数据库模式文件：
 schema.sql
 
-储存数据的表的创建语句是：
-use hello;
-create table entries(id int primary key auto_increment,title text not null,content text not null);
+
