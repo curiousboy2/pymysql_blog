@@ -1,14 +1,21 @@
-本程序以（https://github.com/pallets/flask/tree/master/examples/flaskr）项目为基础，对原项目进行了较大的改进，如原项目使用的数据库
-是sqlite3,而本项目的数据库mysql。
+项目的简介：
+  本程序以（https://github.com/pallets/flask/tree/master/examples/flaskr）项目为基础，在原项目的基础上做了较大的改进，比如原项目
+  使用的数据库是sqlite3,而本项目的数据库改用mysql。
 
-项目的功能：本项目实际上是一个微型博客系统，系统
+项目的功能：本项目是基于python的flask框架开发的一个微型博客系统，系统实现了用户注册，登录，发表文章等功能；
 
 
-需要使用包有：
-import pymysql
-from flask import Flask, request, session, g, redirect, url_for, abort, \
-     render_template, flash
-数据库模式文件：
-schema.sql
+文件夹中各文件介绍：
+pymysql_blog
+----|static        放置静态文件的文件夹
+----|templates     放置模板文件的文件夹
+    ---|base.html             ‘bootstrap/base.html'的衍生模板
+    ---|login.html            登录界面文件
+    ---|register.html         注册界面文件
+    ---|show_entries.html     主界面文件
+----|form.py       表格类
+----|hello.sql     数据库的模式文件
+----|main.py       主程序文件
+----|requires.txt  程序中用到的模块列表
 
 
